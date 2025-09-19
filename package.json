@@ -1,0 +1,74 @@
+{
+  "name": "helpon_backend",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run build && bun run prod",
+    "build": "bun run tsc && cp .env ./build/.env",
+    "prod": "bun run node ./build/index.js",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "lint:fix": "eslint 'src/**/*.{js,ts}' --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "seed": "bun run tsx prisma/seed.ts",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "zeinirfansyah",
+    "helpon",
+    "money management",
+    "personal finance"
+  ],
+  "author": "zeinirfansyah",
+  "license": "ISC",
+  "description": "",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@faker-js/faker": "^9.7.0",
+    "@types/bcryptjs": "^3.0.0",
+    "@types/bun": "^1.2.10",
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.1",
+    "@types/express-fileupload": "^1.5.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.2",
+    "@types/validator": "^13.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "bun-types": "^1.2.10",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "prisma": "^6.6.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.31.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "express": "^5.1.0",
+    "express-fileupload": "^1.5.1",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "validator": "^13.15.0",
+    "yup": "^1.6.1"
+  }
+}

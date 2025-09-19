@@ -1,0 +1,14 @@
+.package-lock.json
+.package.json
+.prettierrc
+.prettierignore
+eslint.config.mjs
+readme.md
+nodemon.json
+dist
+build
+public
+node_modules
+tsconfig.json
+CHANGELOG.md
+vercel.json

@@ -1,0 +1,31 @@
+# dependencies
+/node_modules
+
+#testing
+/coverage
+
+#production
+/dist
+/build
+
+# generated prisma
+/prisma/generated
+/src/generated
+
+# misc
+.DS_Store
+.package-lock.json
+
+# IDE
+.vscode
+
+# env
+.env
+
+# logs
+logs
+
+# other
+z_other.json
+z_notes.json
+todo.txt
